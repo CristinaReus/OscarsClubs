@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*BODY*/
+body {
+  background-color: #e8e8e8;
+  color: #1c1c1c;
+  line-height: 1.4;
+  filter: contrast(#9b1700);
+}
+/*HOME*/
+main {
+  text-align: center;
+  margin: 10px 150px 10px 150px;
+}
+h3 {
+  margin: 50px 0 10px 0;
+}
+
+/* HEADER */
+#header {
+  background-color: #e8e8e8;
+  font-family: 'Open Sans' 400 italic 700, 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin: 0 0 40px 0;
+}
+
+.encap1 a{
+  text-decoration: none;
+}
+
+header img{
+  width: 50px;
+  height: 50px;
+  margin: 10px 5px 5px 5px;
+  background-position: left center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 5px;  
+}
+
+.logoclaqueta{
+  display: inline;
+}
+
+.oscarclub {
+  display: inline;
+}
+.tclub {
+  font-weight: bold;
+  font-style: italic;
+  color: #9b1700;
+  font-size: 30px; 
+}
+.buttons {
+  background-position: right;
+  margin-left: 200px;
+}
+
+.container0 {
+  display: grid;
+  grid-column: 3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 600px){
+  .container0 {
+    grid-template-columns: 1fr;
+  }
+  .logo{
+    order: 2;
+    text-align: center;
+  }
+  .principal{
+    order: 3;
+    text-align: center;
+  }
+  .iniciasess{
+    order: 1;
+    text-align: center;
+  }
+  .buttons{
+    margin-left: 0px;
+  }
+}
+
+#header nav li {
+  display: inline;
+  list-style: none; 
+  font-family: 'Open-Sans', sans-serif;
+}
+
+#header nav{
+  text-align: center;
+  font-size: small;  
+}
+
+#header nav a:link{
+  color:#1c1c1c;
+  text-decoration: none;
+}
+
+#header nav a:hover {
+  color: #1c1c1c;
+  opacity: 0.5;
+}
+
+#header nav :active {
+  font-weight: bold;
+  font-style: italic;
+}
+
+nav a.active {
+  font-weight: bold;
+  font-style: italic;
+}
+
+input[type="submit"] {
+  background-color: #9b1700;
+  background-position: right;
+  color: white;
+  border: 0;
+  font-size: small;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px;
+}
+.logo a:link{
+  text-decoration: none;
+}
+
+/*INDEX*/
+/**QUÈ ÉS OSCARS**/
+#intro {
+  margin: 10px 140px 10px 160px;
+}
+
+/**COM FUNCIONA**/
+
+.container {
+  display: grid;
+  grid-column: 4;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 600px){
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card > img {
+  width: 80%;
+  height: 80%;
+  object-fit: auto;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.card{
+  font-size: small;
+  text-align: center;
+}
+
+/**UNEIX-TE**/
+.container1 {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 80px;
+}
+@media screen and (min-width: 320px) and (max-width: 600px){
+  .container1 {
+    grid-template-columns: 1fr;
+  }
+  #intro {
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+  }
+  #button1{
+    background-position: left;
+  }
+}
+.container1 p{
+  text-align: left;
+}
+
+.form {
+  display: table;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+form div {
+  display: table-row;
+}
+
+form label, form input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 300px;
+  height: 40px;
+}
+
+input:valid:required {
+  border: 2px solid black;
+}
+input:invalid:required {
+  border: red;
+}
+
+.proteccio {
+  font-family: 'Open-Sans';
+  font-size: x-small;
+}
+
+.proteccio a:link{
+  text-decoration: none;
+  color: #9b1700;
+}
+input[type="submit2"] {
+  background-color: #9b1700;
+  background-position: right;
+  color: white;
+  border: 0;
+  font-size: small;
+  text-align: center;
+  padding: 12px 3px 12px 3px;
+  border-radius: 8px;
+}
+
+
+/*CLUBS TEMÀTICS*/
+.clubs {
+  display: grid;
+  grid-column: 3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2px;
+}
+@media screen and (min-width: 320px) and (max-width: 600px){
+  .clubs {
+    grid-template-columns: 1fr;
+  }
+}
+
+q::before {
+  content: "••••";
+  color: rgb(155, 23, 0);
+  margin-right: 1.2rem;
+}
+figure {
+  text-align: left;
+  line-height: normal;
+  font-size: normal;
+  object-fit: auto;
+}
+figure > img {
+  width: 100%;
+  height: 50%;
+  object-fit: auto;
+  background-position: center;
+}
+.clubs a:link{
+  color: rgb(155, 23, 0);
+  text-decoration: none;
+}
+.clubs a:visited{
+  color: rgb(155, 23, 0);
+  text-decoration: none;
+}
+
+/*SESSIONS 2020*/
+.linea {
+  border-top: 4px dotted rgb(155, 23, 0);
+  margin: 10px 0 10px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 2px;
+}
+.nested-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 2;
+  column-gap: 2px;
+  color: rgb(155, 23, 0);
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .nested-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .titol-pelis{
+    grid-template-columns: 1;
+  }
+
+}
+
+.grid li{
+  list-style: none;
+  text-align: left;
+  text-transform: uppercase;
+}
+.grid ul a:link{
+  text-decoration: none;
+}
+.grid ul a:visited{
+  text-decoration: none;
+  color:gray;
+}
+.grid ul a:hover{
+  text-decoration: none;
+  color: rgb(155, 23, 0);
+}
+
+.nested-grid a:link{
+  text-decoration: none;
+  color: rgb(155, 23, 0);
+}
+
+.nested-grid a:visited{
+  text-decoration: none;
+  color: rgb(95, 5, 83);
+}
+
+.nested-grid a:hover {
+  text-decoration: none;
+  color: rgb(155, 23, 0);
+}
+
+.grid img{  
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+.titol-pelis{
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  grid-column: 1/6;
+}
+
+.grid figure{
+  background-color: white;
+  font-weight: bold;
+}
+
+.grid figcaption{
+  text-align: bottom;
+}
+
+/*KLAUS*/
+
+.klaus {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 40% auto;
+  grid-column-gap: 40px;
+}
+@media screen and (min-width: 320px) and (max-width: 600px){
+  .klaus {
+    grid-template-columns: 1fr;
+  }  
+}
+
+#navegador ul{
+  font-family: 'Open Sans';
+  list-style-type: none;
+  display: inline;
+  text-align: left; 
+  font-size: small;
+  opacity: 0.5;
+}
+
+#navegador nav li:after {
+  content: "/";
+  margin: 0 5px;
+  padding: 0;
+}
+#navegador a:link{
+  text-decoration: none;
+}
+
+#tituloklaus {
+  text-align: left;
+}
+
+.obra{
+  text-align: justify;
+}
+#ft{
+  text-align: left;
+}
+.linea2 {
+  border-top: 1px solid black;
+  margin: 0px 0px 5px 0px;
+}
+
+dd{
+  text-align: left;
+  margin-left: 20px;
+}  
+dl{
+  text-align: left;
+  font-weight: bold;
+}
+
+.sergio img{
+  shape-outside: circle();
+  float: left;
+  margin-right: 15px;
+  width: 20%;
+  height: 20%;
+}
+#peuvideo{
+  margin: 0px 0 40px 0;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+/*FOOTER*/
+#footer{
+  background-color:#433A44;
+  color:#FFFFFF;
+  font-size: 12px;  
+} 
+
+.blocks {
+  display: grid;
+  grid-column: 4;
+  grid-row: 4;
+  grid-template-columns: 1fr 1fr 1fr 1fr;  
+  grid-template-rows: auto;
+
+}
+@media screen and (min-width: 320px) and (max-width: 600px){
+  .blocks {
+    grid-template-columns: 1fr;
+  }
+  .box1{
+    text-align: center;
+  }
+  .box2{
+    text-align: center;
+  }
+  .box3{
+    text-align: center;
+  }
+  .box4{
+    text-align: center;
+  }
+
+}
+
+#footer nav li {
+  display: inline;
+  list-style: none; 
+  font-family: 'Open-Sans', sans-serif;
+}
+  
+#footer nav a:link{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#footer nav a:visited{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#footer nav a:hover {
+  color: #9b1700;
+}
+ 
+#footer nav li:after {
+  content: "•";
+  margin: 0 10px;
+}
+#footer nav li:last-child:after {
+  display: none;
+}
+
+.box1 {
+  text-align: left;
+  margin-left: -25px;
+  grid-column: 1/6; 
+}
+
+.box2{
+  text-align: right;
+  margin: 0px 15px 0px 0px;
+  grid-column: 1/6;
+}
+.box3{
+  text-align: left;
+  margin-left: 10px;
+  padding: -10px 1px -10px 1px;
+  grid-column: 1/6;
+}
+.box4{
+  text-align: right;
+  margin-right: 15px;
+  grid-column: 1/6;
+}
